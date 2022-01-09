@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        
+        <link rel="shortcut icon" href="assets/fire.svg" type="svg">
+        <style>
+
+            *{
+                margin: 0%;
+                padding: 0%; 
+                                            
+            }
+            #tela{
+                background-color: darkgreen;
+                height: 625px;
+                width: 100%;                                               
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .menu{
+                background-color:#fff;
+                height:100%;
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            .partea{
+                background-image: linear-gradient(to right, rgb(233, 47, 78), rgb(238, 106, 29));
+                height: 10%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .logo{
+                background-color: rgba(0, 0, 0, 0.247);
+                height:60%;
+                width: 45%;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin-right: 20%;
+            }
+
+            .foto{
+                border-radius: 100%;
+            }
+
+            .fluxoconsultoria{
+                color: #fff;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin-right: 5%;
+            }
+           
+            .handbag{
+                background-color: rgba(0, 0, 0, 0.247);
+                height:60%;
+                width: 10%;
+                border-radius: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .shield{
+                background-color: rgba(0, 0, 0, 0.247);
+                height:60%;
+                width: 10%;
+                border-radius: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .parteb{
+                background-color: #fff;
+                height: 6%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .matches{
+                color: black;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+                height: 100%;
+                width: 20%;
+                margin-left: 5%;
+                margin-right: 5%;              
+                border-bottom: 5px solid; 
+                border-color: rgb(233, 47, 78);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .mensagens{
+                color: black;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+                height: 100%;      
+                width: 25%;    
+                margin-left: 5%;                
+                border-bottom: 5px solid; 
+                border-color: #fff;          
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .partec{
+                background-color: #fff;
+                height: 84%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .quadrado{
+                background-image: linear-gradient(to right, rgb(233, 47, 78), rgb(238, 106, 29));
+                height: 35%;
+                width: 35%;
+                border-radius: 10px;
+                margin-top: 30%;
+                margin-bottom: 10%;
+            }
+
+            .texto{
+                height: 50%;
+                width: 80%;
+                text-align:center;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+            }
+
+            .part{
+                color: rgb(61, 61, 61);
+            }
+                   
+            .fundo{
+                background-color: rgb(226, 226, 226);
+                height: 100%;
+                width: 75%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .perfil{
+                background-color: black;
+                height: 70%;
+                width: 25%;     
+                border-radius: 10px;           
+                display: flex;
+                flex-direction: column;                
+                align-items: flex-end;
+                margin-bottom: 5%;
+            }
+
+            .imagem{                
+                height: 80%;
+                width: 100%;   
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+                position: relative  
+                
+            } 
+ 
+            .info{
+                background-image: linear-gradient(to top, rgb(5, 0, 0), rgba(0, 0, 0, 0.397));
+                height: 25%;
+                width: 100%;                
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                position: absolute;                
+            }
+
+            .nomeidade{
+                color: #fff;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                height: 30%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;  
+                margin-left: 7%;                         
+            }
+
+            .nome{
+                font-weight: bold;
+            }
+
+            .idade{
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            
+            .online{
+                color: #fff;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                height: 20%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin-left: 7%;   
+                
+            }
+
+            .onl{
+                margin-left: 3%;
+            }
+
+            .cursoperiodo{
+                color: #fff;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                height: 20%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;   
+                margin-top: 5%;
+                margin-left: 5%;
+                margin-left: 7%;
+            }
+
+            .inf{
+                margin-left: 10%;
+            }
+
+            .botoes{
+                background-color: black;
+                height: 20%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .botao{
+                background-color: rgba(0, 0, 0, 0.39);
+                height:40%;
+                width: 14%;
+                border-radius: 50px;
+                border: 1px solid; 
+                border-color: rgb(255, 255, 255);                             
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .big{
+                height:52%;
+                width: 18%;
+            }
+
+            .x{
+                border-color: red;
+            }
+            .star{
+                border-color: aqua;
+            }
+            .heart{
+                border-color: green;
+            }
+            .light{
+                border-color: purple;
+            }
+
+            .barra{
+                background-color: rgb(226, 226, 226);
+                height: 10%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .navegacao{
+                background-color: rgb(226, 226, 226);
+                height: 100%;
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            .ocultar{
+                background-color: rgb(0, 0, 0);
+                height: 55%;
+                width: 20%;
+                margin-right: 5%;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .oclt{
+                color: #fff;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;                
+            }
+
+            .navg{
+                background-color: rgb(226, 226, 226);
+                height: 100%;
+                width: 5%;
+                margin-right: 1%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .menor{
+                background-color: rgb(226, 226, 226);
+                height: 100%;
+                width: 10%;
+                margin: 2%;                               
+            }
+            
+            .maior{
+                background-color: rgb(226, 226, 226);
+                height: 80%;
+                width: 30%;     
+                margin-right: 1%;                          
+            }    
+                        
+            .opcoes{
+                color: rgb(0, 0, 0);
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 10px;
+            }
+
+            .add{
+                background-color: rgb(226, 226, 226);
+                height: 25%;
+                width: 13%;
+                margin-right: 1%;
+                border: 2px solid; 
+                border-color: black;                
+                border-radius: 5px;
+            }            
+                   
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="tela">
+            
+            <div class="menu">
+
+                <div class="partea">
+                    <div class="logo"> 
+                        <img class="foto" src="assets/logo.png" alt="a" width="18%" height="80%">
+                        <h5 class="fluxoconsultoria">Fluxo Consultoria</h5>
+                    </div>                    
+                    <div class="handbag">
+                        <img src="assets/handbag.svg" alt="a" width="70%" height="70%">
+                    </div>
+                    <div class="shield">
+                        <img src="assets/shield.svg" alt="a" width="70%" height="70%"> 
+                    </div>                    
+                </div>
+
+                <div class="parteb">
+                    <div class="matches">
+                        <h5 class="mem a">Matches</h5>
+                    </div>
+
+                    <div class="mensagens">
+                        <h5 class="mem b">Mensagens</h5>  
+                    </div>                    
+                                    
+                </div>
+
+                <div class="partec">
+                    <div class="quadrado"></div>
+                    <div class="texto"> 
+                        <h3 class="pame">O que está achando <br>do PAME?</h3>
+                        <h6 class="part">Participar do PAME está sendo uma experiência muito enriquecedora e que em poucos dias me trouxe um crescimento maior do que eu esperava. Em poucos dias de capacitação já pude desenvolver conhecimentos sobre diversos assuntos, por exemplo, aprender a fazer um projeto como esse. Além de poder conhecer mais da empresa jr. Tudo isso me deixou mais animada ainda para as próximas aulas de capacitação!</h6>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="fundo">
+                <div class="perfil">
+
+                    <div class="imagem">
+                        <img src="assets/foto.jpeg" alt="a" height="100%" width="100%">
+                        <div class="info">
+                            <div class="nomeidade">
+                                <h3 class="nome">Fernanda de Paula</h3>
+                                <h3 class="idade">19</h3>
+                                <img src="assets/verificado.png" alt="a" height="60%" width="9%">
+                            </div>
+
+                            <div class="online">
+                                <img src="assets/online.png" alt="a" height="60%" width="4%">
+                                <h6 class="onl">Online recentemente</h6>
+                            </div>
+
+                            <div class="cursoperiodo">                                
+                                <h5>Eng de Controle e Automação <br> 4º Período</h5>
+                                <img class="inf" src="assets/inf.png" alt="a" height="100%" width="7%">
+                                                               
+                            </div>
+                            
+                        </div>
+
+                    </div>                  
+
+                    <div class="botoes">
+                        <div class="botao volta">
+                            <img src="assets/return.svg" alt="a" height="75%"  width="75%;">
+                        </div>
+                        <div class="botao x big">
+                            <img src="assets/x.svg" alt="a" height="70%"  width="70%;">
+                        </div>
+                        <div class="botao star">
+                            <img src="assets/star.svg" alt="a" height="75%"  width="75%;">
+                        </div>
+                        <div class="botao heart big">
+                            <img src="assets/heart.svg" alt="a" height="70%"  width="70%;">
+                        </div>
+                        <div class="botao light">
+                            <img src="assets/lightning.svg" alt="a" height="75%"  width="75%;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="barra">      
+                    
+                    <div class="navegacao">
+
+                        <div class="ocultar">
+                            <h6 class="oclt c">OCULTAR</h6>
+                        </div>
+
+                        <div class="navg menor">
+                            <img src="assets/left.svg" alt="a" height="45%"  width="45%;">
+                            <h6 class="opcoes voltar">VOLTAR</h6>
+                        </div>
+                        <div class="navg menor">
+                            <img src="assets/right.svg" alt="a" height="45%"  width="45%;">
+                            <h6 class="opcoes voltar">CURTIR</h6>
+                        </div>
+                        <div class="navg maior">
+                            <img class="img" src="assets/up.svg" alt="a" height="45%"  width="45%;">
+                            <h6 class="opcoes voltar">ABRIR PERFIL</h6>
+                        </div>
+                        <div class="navg maior">
+                            <img class="img" src="assets/down.svg" alt="a" height="45%"  width="45%;">
+                            <h6 class="opcoes voltar">FECHAR PERFIL</h6>
+                        </div>
+                        <div class="navg maior">
+                            <img class="img" src="assets/enteringArrow.svg" alt="a" height="45%"  width="45%;">
+                            <h6 class="opcoes voltar">SUPER LIKE</h6>
+                        </div>                     
+                                                
+                        <div class="add"></div>
+                        <h6 class="opcoes voltar">PRÓXIMA FOTO</h6>
+
+                    </div>                                            
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
